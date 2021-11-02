@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="col-8 container">
+      <div class="todo-main col-6">
+        <div class="todo-main__header">
+          <a href="http://github.com/omoghadasi" target="_blank">
+            <img src="assets/img/Logo.png" alt="omid moghadasi" />
+          </a>
+          <span>hi, im Omid</span>
+          <span>this is simple todo app</span>
+        </div>
+        <hr />
+        <div class="todo-main__form w-100">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="add more todo..."
+          /><button type="button" class="btn btn-outline-light w-25">
+            ADD
+          </button>
+        </div>
+        <div class="todo-main__todos w-100 pt-3 pb-3 mb-3">
+          <ul class="nav nav-tabs mb-2" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="undone-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#undone"
+                type="button"
+                role="tab"
+                aria-controls="undone"
+                aria-selected="true"
+              >
+                Undone
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="done-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#done"
+                type="button"
+                role="tab"
+                aria-controls="done"
+                aria-selected="false"
+              >
+                done
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="undone"
+              role="tabpanel"
+              aria-labelledby="undone-tab"
+            >
+              <div
+                class="
+                  todo
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                  mt-1
+                  p-2
+                "
+              >
+                <span class="text">text</span>
+                <div class="action">
+                  <div
+                    class="btn-group btn-group-sm"
+                    role="group"
+                    aria-label="Basic mixed styles example"
+                  >
+                    <button type="button" class="btn btn-success">Done</button>
+                    <button type="button" class="btn btn-warning">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="done"
+              role="tabpanel"
+              aria-labelledby="done-tab"
+            >
+              <div
+                class="
+                  todo
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                  p-2
+                "
+              >
+                <span class="text">text</span>
+                <div class="action">
+                  <div
+                    class="btn-group btn-group-sm"
+                    role="group"
+                    aria-label="Basic mixed styles example"
+                  >
+                    <button type="button" class="btn btn-success">Done</button>
+                    <button type="button" class="btn btn-warning">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
